@@ -1,0 +1,76 @@
+main {
+    .floating-square {
+        position: absolute;
+        display: inline-block;
+        border: 8px solid $blue;
+        border-radius: 35%;
+        width: 50px;
+        height: 50px;
+        opacity: .7;
+    }
+    #square-1 {}
+    #square-2 {}
+    #square-3 {}
+    #square-4 {}
+    #square-5 {
+        top: 85vh;
+        left: 10vw;
+    }
+    #square-6 {
+        top: 80vh;
+        left: 82vw;
+    }
+    #square-7 {
+        top: 70vh;
+        left: 35vw;
+    }
+    #square-8 {
+        top: 28vh;
+        left: 20vw;
+    }
+    #square-9 {
+        top: 15vh;
+        left: 55vw;
+    }
+    #square-10 {
+        top: 25vh;
+        left: 80vw;
+    }
+    #welcome-row {
+        height: 85vh;
+        #welcome-name {
+            font-size: 4em;
+        }
+    }
+    #skills-row {
+        #skills {
+            height: 34rem;
+            padding: 10px 30px;
+            background-color: $orange;
+            #skill-list {
+                padding: 0;
+                list-style-type: none;
+                .skill-name {
+                    display: inline-block;
+                    width: 20%;
+                    height: 50px;
+                    line-height: 50px;
+                }
+                .skill {
+                    background-color: #ffffff;
+                    display: inline-block;
+                    margin: 10px 0;
+                    line-height: 50px;
+                    height: 50px;
+                    width: 80%;
+                    .skill-level {
+                        display: inline-block;
+                        height: 100%;
+                        background-color: $blue;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

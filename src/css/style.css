@@ -308,7 +308,8 @@ body {
 /* LAYOUT - Page layout styles */
 header nav #nav-list {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-top: 25px; }
   header nav #nav-list .nav-item {
     display: block;
     font-size: 2em;
@@ -342,6 +343,69 @@ header nav #burger-bar {
   display: block !important; }
 
 /* MODULES - Individual site components */
+main .floating-square {
+  position: absolute;
+  display: inline-block;
+  border: 8px solid #2956B2;
+  border-radius: 35%;
+  width: 50px;
+  height: 50px;
+  opacity: .7; }
+
+main #square-5 {
+  top: 85vh;
+  left: 10vw; }
+
+main #square-6 {
+  top: 80vh;
+  left: 82vw; }
+
+main #square-7 {
+  top: 70vh;
+  left: 35vw; }
+
+main #square-8 {
+  top: 28vh;
+  left: 20vw; }
+
+main #square-9 {
+  top: 15vh;
+  left: 55vw; }
+
+main #square-10 {
+  top: 25vh;
+  left: 80vw; }
+
+main #welcome-row {
+  height: 85vh; }
+  main #welcome-row #welcome-name {
+    font-size: 4em; }
+
+main #skills-row #skills {
+  height: 34rem;
+  padding: 10px 30px;
+  background-color: #FF9900; }
+  main #skills-row #skills #skill-list {
+    padding: 0;
+    list-style-type: none; }
+    main #skills-row #skills #skill-list .skill-name {
+      display: inline-block;
+      width: 20%;
+      height: 50px;
+      line-height: 50px; }
+    main #skills-row #skills #skill-list .skill {
+      background-color: #ffffff;
+      display: inline-block;
+      margin: 10px 0;
+      line-height: 50px;
+      height: 50px;
+      width: 80%; }
+      main #skills-row #skills #skill-list .skill .skill-level {
+        display: inline-block;
+        height: 100%;
+        background-color: #2956B2;
+        width: 50%; }
+
 @font-face {}body {
   color: #F8F8F8;
   font-family: "Inconsolata", monospace; }
