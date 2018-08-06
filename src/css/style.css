@@ -306,6 +306,41 @@ body {
   background-color: #1a1a1a; }
 
 /* LAYOUT - Page layout styles */
+header nav #nav-list {
+  margin: 0;
+  padding: 0; }
+  header nav #nav-list .nav-item {
+    display: block;
+    font-size: 2em;
+    padding: 0; }
+    header nav #nav-list .nav-item a {
+      color: #ffffff; }
+    header nav #nav-list .nav-item a:hover {
+      text-decoration: none; }
+  header nav #nav-list .nav-item:hover {
+    border-bottom: 2px solid #FF9900; }
+
+header nav #burger-bar {
+  display: none; }
+  header nav #burger-bar #burger {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    font-size: 1em;
+    line-height: 1em;
+    font-weight: bold;
+    margin: 15px 0 15px 0; }
+
+@media only screen and (max-width: 768px) {
+  header nav #nav-list {
+    flex-direction: column;
+    display: none; }
+  header nav #burger-bar {
+    display: block; } }
+
+.hide-navbar {
+  display: block !important; }
+
 /* MODULES - Individual site components */
 @font-face {}body {
   color: #F8F8F8;
