@@ -1,7 +1,6 @@
 # Node
 node_modules/
 Procfile
-package-lock.json
 public/
 
 # Maven
