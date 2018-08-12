@@ -1,4 +1,5 @@
 /* skillbar-animation BEGIN */
+//http://imakewebthings.com/waypoints/guides/jquery-zepto/
 $(function () {
     let waypoints = $('#skills').waypoint({
         handler: function () {

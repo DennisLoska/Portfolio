@@ -1,6 +1,7 @@
 'use strict';
 
 /* skillbar-animation BEGIN */
+//http://imakewebthings.com/waypoints/guides/jquery-zepto/
 $(function () {
     var waypoints = $('#skills').waypoint({
         handler: function handler() {
