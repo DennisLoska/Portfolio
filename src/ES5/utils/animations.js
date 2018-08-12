@@ -43,3 +43,35 @@ $(document).ready(function () {
     });
 });
 /* fade-in animations based on animate.css END */
+
+/* navigation animation BEGIN */
+$(document).ready(function () {
+    $(".js-link").click(function () {
+        console.log("hi");
+        console.log(this.id);
+
+        var destination = void 0;
+        switch (this.id) {
+            case 'js-l1':
+                destination = '#skills-row';
+                break;
+            case 'js-l2':
+                destination = '#about-row';
+                break;
+            case 'js-l3':
+                destination = '#project-row';
+                break;
+            case 'js-l4':
+                destination = '#contact-row';
+                break;
+            default:
+                break;
+        }
+        console.log(destination);
+
+        $('html,body').animate({
+            scrollTop: $(destination).offset().top
+        }, 'slow');
+    });
+});
+/* navigation animation END */
