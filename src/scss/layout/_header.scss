@@ -17,6 +17,7 @@ header {
             }
             .nav-item:hover {
                 border-bottom: 2px solid $orange;
+                margin-bottom: -2px;
             }
         }
         #burger-bar {

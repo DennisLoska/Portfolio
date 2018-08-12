@@ -319,7 +319,8 @@ header nav #nav-list {
     header nav #nav-list .nav-item a:hover {
       text-decoration: none; }
   header nav #nav-list .nav-item:hover {
-    border-bottom: 2px solid #FF9900; }
+    border-bottom: 2px solid #FF9900;
+    margin-bottom: -2px; }
 
 header nav #burger-bar {
   display: none; }
