@@ -47,9 +47,6 @@ $(document).ready(function () {
 /* navigation animation BEGIN */
 $(document).ready(function () {
     $(".js-link").click(function () {
-        console.log("hi");
-        console.log(this.id);
-
         var destination = void 0;
         switch (this.id) {
             case 'js-l1':
@@ -67,8 +64,6 @@ $(document).ready(function () {
             default:
                 break;
         }
-        console.log(destination);
-
         $('html,body').animate({
             scrollTop: $(destination).offset().top
         }, 'slow');

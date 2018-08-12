@@ -47,32 +47,26 @@ $(document).ready(function () {
 /* navigation animation BEGIN */
 $(document).ready(function () {
     $(".js-link").click(function () {
-        console.log("hi");
-        console.log(this.id);
-
-        let destination
+        let destination;
         switch (this.id) {
             case 'js-l1':
-                destination = '#skills-row'
+                destination = '#skills-row';
                 break;
             case 'js-l2':
-                destination = '#about-row'
+                destination = '#about-row';
                 break;
             case 'js-l3':
-                destination = '#project-row'
+                destination = '#project-row';
                 break;
             case 'js-l4':
-                destination = '#contact-row'
+                destination = '#contact-row';
                 break;
             default:
                 break;
         }
-        console.log(destination);
-
         $('html,body').animate({
-                scrollTop: $(destination).offset().top
-            },
-            'slow');
+            scrollTop: $(destination).offset().top
+        }, 'slow');
     });
 });
 /* navigation animation END */
