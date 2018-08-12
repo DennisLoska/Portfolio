@@ -3041,6 +3041,39 @@ main #about-row #about-headline p {
   main #about-row #about-headline p {
     text-align: justify; } }
 
+main #contact-row #contact-headline {
+  margin: 60px 0;
+  text-align: center;
+  font-size: 4em; }
+
+main #contact-row p {
+  font-size: 1.2em;
+  text-align: center; }
+
+main #contact-row #contact-form {
+  margin: 50px 0 100px 0; }
+  main #contact-row #contact-form .form-control {
+    border-radius: 0;
+    border: 2px solid #FF9900; }
+  main #contact-row #contact-form .form-row {
+    margin: 10px 0; }
+
+#form-btn {
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 250px;
+  background-color: transparent;
+  color: white;
+  line-height: 50px;
+  margin-top: 2rem;
+  font-size: 32px;
+  border: 3px solid orange;
+  border-radius: 0; }
+
+#form-btn:hover {
+  background-color: #333333; }
+
 .hidden {
   opacity: 0; }
 

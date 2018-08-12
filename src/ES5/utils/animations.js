@@ -38,9 +38,13 @@ $(document).ready(function () {
         offset: 350
     });
     $('#skills').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated slideInUp',
+        classToAdd: 'visible animated bounceInUp',
         offset: 350,
         callbackFunction: loadSkills()
+    });
+    $('#form-wrapper').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceInUp',
+        offset: 250
     });
 });
 /* fade-in animations based on animate.css END */

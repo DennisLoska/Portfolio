@@ -1,0 +1,17 @@
+#form-btn {
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 250px;
+    background-color: transparent;
+    color: white;
+    line-height: 50px;
+    margin-top: 2rem;
+    font-size: 32px;
+    border: 3px solid orange;
+    border-radius: 0;
+}
+
+#form-btn:hover {
+    background-color: #333333;
+}
