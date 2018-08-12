@@ -8,12 +8,24 @@ main {
         height: 50px;
         opacity: .7;
     }
-    #square-1 {}
-    #square-2 {}
-    #square-3 {}
-    #square-4 {}
+    #square-1 {
+        top: 115vh;
+        left: 90vw;
+    }
+    #square-2 {
+        top: 145vh;
+        left: 75vw;
+    }
+    #square-3 {
+        top: 125vh;
+        left: 55vw;
+    }
+    #square-4 {
+        top: 115vh;
+        left: 3vw;
+    }
     #square-5 {
-        top: 85vh;
+        top: 80vh;
         left: 10vw;
     }
     #square-6 {
@@ -21,15 +33,15 @@ main {
         left: 82vw;
     }
     #square-7 {
-        top: 70vh;
-        left: 35vw;
+        top: 63vh;
+        left: 27vw;
     }
     #square-8 {
-        top: 28vh;
-        left: 20vw;
+        top: 24vh;
+        left: 12vw;
     }
     #square-9 {
-        top: 15vh;
+        top: 18vh;
         left: 55vw;
     }
     #square-10 {
