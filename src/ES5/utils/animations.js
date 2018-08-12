@@ -1,21 +1,16 @@
 'use strict';
 
+/* skillbar-animation BEGIN */
 $(function () {
-    var skillset = [100, 90, 65, 60, 80, 50, 40, 20];
-    var once = false;
-    var timeOut = void 0;
-
-    function stopTimer() {
-        clearTimeout(timeOut);
-    }
-
     var waypoints = $('#skills').waypoint({
         handler: function handler() {
-            console.log(once);
+            var skillset = [100, 90, 65, 60, 80, 50, 40, 20];
+            var once = false;
 
             function loadBars(time) {
+                var timeOut = void 0;
                 $('.skill-percent').each(function (i) {
-                    if (time <= skillset[i]) $(this).css('width', time + '%');else stopTimer();
+                    if (time <= skillset[i]) $(this).css('width', time + '%');else clearTimeout(timeOut);
                 });
                 timeOut = setTimeout(function () {
                     loadBars(time + 4);
@@ -26,6 +21,7 @@ $(function () {
                 once = true;
             }
         },
-        offset: '40%'
+        offset: '50%'
     });
 });
+/* skillbar-animation END */
