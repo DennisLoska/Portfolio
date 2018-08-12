@@ -36,6 +36,8 @@ header {
             #nav-list {
                 flex-direction: column;
                 display: none;
+                position: absolute;
+                z-index: 1;
             }
             #burger-bar {
                 display: block;

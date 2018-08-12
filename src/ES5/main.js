@@ -1,5 +1,5 @@
-"use strict";
+'use strict';
 
 function showNavigation() {
-    $('#nav-list').toggleClass("hide-navbar");
+    $('#nav-list').fadeToggle();
 }

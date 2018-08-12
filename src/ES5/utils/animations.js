@@ -3,10 +3,10 @@
 /* skillbar-animation BEGIN */
 //http://imakewebthings.com/waypoints/guides/jquery-zepto/
 $(function () {
-    var waypoints = $('#skills').waypoint({
+    var once = false;
+    var waypoints_skills = $('#skills').waypoint({
         handler: function handler() {
             var skillset = [100, 90, 65, 60, 80, 50, 40, 20];
-            var once = false;
 
             function loadBars(time) {
                 var timeOut = void 0;
@@ -26,3 +26,20 @@ $(function () {
     });
 });
 /* skillbar-animation END */
+
+/* fade-in animations based on animate.css BEGIN */
+$(document).ready(function () {
+    $('.component-l').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceInRight',
+        offset: 300
+    });
+    $('.component-r').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated bounceInLeft',
+        offset: 300
+    });
+    $('#skills').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated slideInUp',
+        offset: 300
+    });
+});
+/* fade-in animations based on animate.css END */

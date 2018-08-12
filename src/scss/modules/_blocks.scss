@@ -10,7 +10,7 @@ main {
     }
     #square-1 {
         top: 115vh;
-        left: 90vw;
+        left: 85vw;
     }
     #square-2 {
         top: 145vh;
@@ -50,11 +50,23 @@ main {
     }
     #welcome-row {
         height: 85vh;
-        #welcome-name {
+        #welcome-headline h1 {
             font-size: 4em;
         }
     }
     #skills-row {
+        #skill-headline h2 {
+            font-size: 4em;
+            margin: 60px 0;
+        }
+        .rmv-padding {
+            padding: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            .rmv-padding {
+                padding: 0 15px;
+            }
+        }
         #skills {
             background-color: #333333;
             padding: 20px;
@@ -66,6 +78,7 @@ main {
                     margin: 10px 0;
                     height: 50px;
                     line-height: 50px;
+                    font-weight: 700;
                 }
                 .skill-bar {
                     width: 70%;
@@ -77,6 +90,22 @@ main {
                         height: 50px;
                         width: 0%;
                     }
+                }
+            }
+        }
+    }
+    #about-row {
+        #about-headline {
+            h2 {
+                margin: 60px 0;
+                font-size: 4em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+            @media only screen and (max-width: 768px) {
+                p {
+                    text-align: justify;
                 }
             }
         }
