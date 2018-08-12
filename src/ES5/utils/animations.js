@@ -2,7 +2,7 @@
 
 /* skillbar-animation BEGIN */
 //http://imakewebthings.com/waypoints/guides/jquery-zepto/
-$(function () {
+$(document).ready(function () {
     var once = false;
     var waypoints_skills = $('#skills').waypoint({
         handler: function handler() {
@@ -31,20 +31,24 @@ $(function () {
 $(document).ready(function () {
     $('.component-l').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInRight',
-        offset: 300
+        offset: 350
     });
     $('.component-r').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInLeft',
-        offset: 300
+        offset: 350
     });
     $('#skills').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated slideInUp',
-        offset: 300
+        offset: 350
     });
 });
 /* fade-in animations based on animate.css END */
 
 /* navigation animation BEGIN */
+function showNavigation() {
+    $('#nav-list').fadeToggle();
+}
+
 $(document).ready(function () {
     $(".js-link").click(function () {
         var destination = void 0;

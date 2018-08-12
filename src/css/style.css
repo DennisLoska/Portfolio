@@ -2927,9 +2927,17 @@ header nav #burger-bar {
     flex-direction: column;
     display: none;
     position: absolute;
-    z-index: 1; }
+    z-index: 1;
+    top: 90px;
+    left: 0;
+    padding: 15px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: #1a1a1a; }
   header nav #burger-bar {
-    display: block; } }
+    display: block;
+    color: #FF9900; } }
 
 .hide-navbar {
   display: block !important; }

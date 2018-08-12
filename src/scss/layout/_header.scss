@@ -38,9 +38,17 @@ header {
                 display: none;
                 position: absolute;
                 z-index: 1;
+                top: 90px;
+                left: 0;
+                padding: 15px;
+                width: 100vw;
+                height: 100vh;
+                z-index: 1;
+                background-color: $black;
             }
             #burger-bar {
                 display: block;
+                color: $orange;
             }
         }
     }
