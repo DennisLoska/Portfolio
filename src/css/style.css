@@ -382,29 +382,25 @@ main #welcome-row {
     font-size: 4em; }
 
 main #skills-row #skills {
-  height: 34rem;
-  padding: 10px 30px;
-  background-color: #FF9900; }
-  main #skills-row #skills #skill-list {
-    padding: 0;
-    list-style-type: none; }
-    main #skills-row #skills #skill-list .skill-name {
-      display: inline-block;
-      width: 20%;
+  background-color: #333333;
+  padding: 20px; }
+  main #skills-row #skills .skill {
+    display: flex; }
+    main #skills-row #skills .skill span {
+      display: block;
+      width: 30%;
+      margin: 10px 0;
       height: 50px;
       line-height: 50px; }
-    main #skills-row #skills #skill-list .skill {
-      background-color: #ffffff;
-      display: inline-block;
-      margin: 10px 0;
-      line-height: 50px;
+    main #skills-row #skills .skill .skill-bar {
+      width: 70%;
       height: 50px;
-      width: 80%; }
-      main #skills-row #skills #skill-list .skill .skill-level {
-        display: inline-block;
-        height: 100%;
+      margin: 10px 0;
+      background-color: #ffffff; }
+      main #skills-row #skills .skill .skill-bar .skill-percent {
         background-color: #2956B2;
-        width: 50%; }
+        height: 50px;
+        width: 0%; }
 
 @font-face {}body {
   color: #F8F8F8;

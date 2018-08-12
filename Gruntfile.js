@@ -18,6 +18,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     'src/ES5/main.js': 'src/js/main.js',
+                    'src/ES5/utils/animations.js': 'src/js/utils/animations.js',
                 },
             },
         },
@@ -77,23 +78,7 @@ module.exports = function (grunt) {
         uglify: {
             target: {
                 files: {
-                    /*
-                    'public/js/GameEngine.js': 'public/js/GameEngine.js',
-                    'public/js/ImageGenerator.js': 'public/js/ImageGenerator.js',
-                    'public/js/Images.js': 'public/js/Images.js',
-                    'public/js/InverseMatrix.js': 'public/js/InverseMatrix.js',
-                    'public/js/Level.js': 'public/js/Level.js',
-                    'public/js/View.js': 'public/js/View.js',
-                    'public/js/Game.js': 'public/js/Game.js',
-                    'public/js/main.js': 'public/js/main.js',
-                    */
-                    'public/js/app.js': ['src/js/utils/animations.js', 'src/ES5/main.js'],
-                    /*
-                    'public/js/vendor/bootstrap.min.js': 'src/js/vendor/bootstrap.min.js',
-                    'public/js/vendor/jquery-3.3.1.slim.min.js': 'src/js/vendor/jquery-3.3.1.slim.min.js',
-                    'public/js/vendor/jquery.min.js': 'src/js/vendor/jquery.min.js',
-                    'public/js/vendor/popper.min.js': 'src/js/vendor/popper.min.js',
-                    */
+                    'public/js/app.js': ['src/ES5/utils/animations.js', 'src/ES5/main.js'],
                 },
             },
         },
