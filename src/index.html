@@ -187,10 +187,10 @@
             <div class="row justify-content-center" id="contact-row">
                 <div class="col-lg-8" id="form-wrapper">
                     <h2 id="contact-headline">Contact</h2>
-                    <p>
-                        
+                    <p id="form-info">
+                        Feel free to contact me, if you have any questions or propositions so we can talk about all the details :)
                     </p>
-                    <form class="" action="" method="post" id="contact-form">
+                    <form class="" action="/sendMail" method="post" id="contact-form">
                         <div class="row row-sm-offset form-group">
                             <div class="col-md-4 form-row">
                                 <label class="form-labels" for="input-name">Name</label>
@@ -207,11 +207,11 @@
                         </div>
                         <div class="form-group form-row">
                             <label class="form-labels" for="input-text">Message</label>
-                            <textarea type="text" class="form-control" rows="7" name="message" id="input-text"></textarea>
+                            <textarea type="text" class="form-control" rows="7" name="message" id="input-message"></textarea>
                         </div>
                         <span class="input-group-btn">
                             <div class="g-recaptcha" data-sitekey="6LdduWkUAAAAACFzqfneGPenvzWJHw-qxEMCEGF4"></div>
-                            <button href="" type="submit" class="btn btn-form" id="form-btn">SEND</button>
+                            <button type="submit" class="btn btn-form" id="form-btn">SEND</button>
                         </span>
                     </form>
                 </div>

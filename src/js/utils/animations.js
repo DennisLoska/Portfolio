@@ -31,11 +31,11 @@ function loadSkills() {
 $(document).ready(function () {
     $('.component-l').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInRight',
-        offset: 350
+        offset: 350,
     });
     $('.component-r').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInLeft',
-        offset: 350
+        offset: 350,
     });
     $('#skills').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInUp',

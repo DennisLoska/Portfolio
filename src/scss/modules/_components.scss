@@ -8,3 +8,17 @@
 .circle-visible {
     opacity: .7;
 }
+
+#form-response {
+    height: 32rem;
+    #success-img {
+        width: 75px;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+#form-response-failed {
+    height: 6rem;
+    color: $orange;
+}

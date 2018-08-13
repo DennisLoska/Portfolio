@@ -3192,6 +3192,17 @@ main #project-row .project-name {
 .circle-visible {
   opacity: .7; }
 
+#form-response {
+  height: 32rem; }
+  #form-response #success-img {
+    width: 75px;
+    height: auto;
+    margin-top: 20px; }
+
+#form-response-failed {
+  height: 6rem;
+  color: #FF9900; }
+
 @font-face {}body {
   color: #F8F8F8;
   font-family: "Inconsolata", monospace; }
