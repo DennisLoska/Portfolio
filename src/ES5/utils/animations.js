@@ -46,6 +46,10 @@ $(document).ready(function () {
         classToAdd: 'visible animated bounceInUp',
         offset: 250
     });
+    $('.floating-square').addClass("hidden").viewportChecker({
+        classToAdd: 'circle-visible animated bounceInUp',
+        offset: 150
+    });
 });
 /* fade-in animations based on animate.css END */
 

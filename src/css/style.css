@@ -2949,8 +2949,7 @@ main .floating-square {
   border: 8px solid #2956B2;
   border-radius: 35%;
   width: 50px;
-  height: 50px;
-  opacity: .7; }
+  height: 50px; }
 
 main #square-1 {
   top: 115vh;
@@ -3128,6 +3127,9 @@ main #contact-row #contact-form {
 
 .visible {
   opacity: 1; }
+
+.circle-visible {
+  opacity: .7; }
 
 @font-face {}body {
   color: #F8F8F8;
