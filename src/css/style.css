@@ -3049,7 +3049,10 @@ main #skills-row .rmv-padding {
 
 main #skills-row #skills {
   background-color: #333333;
-  padding: 20px; }
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75); }
   main #skills-row #skills .skill {
     display: flex; }
     main #skills-row #skills .skill span {
@@ -3089,21 +3092,72 @@ main #about-row #img-portrait {
   border-radius: 50%;
   display: none; }
 
-main #contact-row #contact-headline {
+main #project-row #project-headline {
   margin: 60px 0;
+  font-size: 4em; }
+
+main #project-row p {
+  font-size: 1.2em; }
+
+@media only screen and (max-width: 768px) {
+  main #project-row p {
+    text-align: justify; } }
+
+main #project-row .project-card {
+  height: auto;
+  background-color: #333;
+  -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  overflow: hidden; }
+  main #project-row .project-card .project-link .project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in; }
+  main #project-row .project-card .project-link .project-img:hover {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+
+main #project-row .project-name {
+  display: block;
+  height: 50px;
+  margin: -15px -15px auto auto;
+  position: relative;
+  line-height: 50px;
+  font-size: 28px;
+  margin-bottom: 60px;
+  background-color: #FF9900;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  font-family: Helvetica;
+  width: 70%;
+  -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75); }
+
+#contact-row #contact-headline {
+  margin: 60px 0 60px 0;
   text-align: center;
   font-size: 4em; }
 
-main #contact-row p {
+#contact-row p {
   font-size: 1.2em;
   text-align: center; }
 
-main #contact-row #contact-form {
+#contact-row #contact-form {
   margin: 50px 0 100px 0; }
-  main #contact-row #contact-form .form-control {
+  #contact-row #contact-form .form-control {
     border-radius: 0;
     border: 2px solid #FF9900; }
-  main #contact-row #contact-form .form-row {
+  #contact-row #contact-form .form-row {
     margin: 10px 0; }
 
 #form-btn {

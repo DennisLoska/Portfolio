@@ -44,11 +44,15 @@ $(document).ready(function () {
     });
     $('#form-wrapper').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInUp',
-        offset: 250
+        offset: 350
     });
     $('.floating-square').addClass("hidden").viewportChecker({
         classToAdd: 'circle-visible animated bounceInUp',
         offset: 150
+    });
+    $('#card-wrapper').addClass("hidden").viewportChecker({
+        classToAdd: 'circle-visible animated bounceInUp',
+        offset: 350
     });
 });
 /* fade-in animations based on animate.css END */
