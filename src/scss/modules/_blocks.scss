@@ -180,6 +180,7 @@ main {
             -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
             box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+            border: 3px solid $orange;
             overflow: hidden;
             .project-link {
                 .project-img {
@@ -203,7 +204,7 @@ main {
         .project-name {
             display: block;
             height: 50px;
-            margin: -15px -15px auto auto;
+            margin: -15px -5px auto auto;
             position: relative;
             line-height: 50px;
             font-size: 28px;
@@ -213,10 +214,13 @@ main {
             font-weight: 700;
             text-align: center;
             font-family: Helvetica;
-            width: 70%;
+            width: 60%;
             -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
             box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+            -webkit-transform: skew(-20deg);
+            -moz-transform: skew(-20deg);
+            -o-transform: skew(-20deg);
         }
     }
 }
@@ -239,6 +243,10 @@ main {
         }
         .form-row {
             margin: 10px 0;
+        }
+        .g-recaptcha {
+            margin: 30px auto auto auto;
+            width: 304px;
         }
     }
 }

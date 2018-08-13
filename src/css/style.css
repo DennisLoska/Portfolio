@@ -3109,6 +3109,7 @@ main #project-row .project-card {
   -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  border: 3px solid #FF9900;
   overflow: hidden; }
   main #project-row .project-card .project-link .project-img {
     width: 100%;
@@ -3128,7 +3129,7 @@ main #project-row .project-card {
 main #project-row .project-name {
   display: block;
   height: 50px;
-  margin: -15px -15px auto auto;
+  margin: -15px -5px auto auto;
   position: relative;
   line-height: 50px;
   font-size: 28px;
@@ -3138,10 +3139,13 @@ main #project-row .project-name {
   font-weight: 700;
   text-align: center;
   font-family: Helvetica;
-  width: 70%;
+  width: 60%;
   -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75); }
+  box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg); }
 
 #contact-row #contact-headline {
   margin: 60px 0 60px 0;
@@ -3159,6 +3163,9 @@ main #project-row .project-name {
     border: 2px solid #FF9900; }
   #contact-row #contact-form .form-row {
     margin: 10px 0; }
+  #contact-row #contact-form .g-recaptcha {
+    margin: 30px auto auto auto;
+    width: 304px; }
 
 #form-btn {
   text-align: center;
