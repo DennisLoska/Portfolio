@@ -2957,16 +2957,16 @@ main #square-1 {
   left: 85vw; }
 
 main #square-2 {
-  top: 145vh;
-  left: 75vw; }
+  top: 27vh;
+  left: 85vw; }
 
 main #square-3 {
   top: 125vh;
   left: 55vw; }
 
 main #square-4 {
-  top: 115vh;
-  left: 3vw; }
+  top: 118vh;
+  left: 4vw; }
 
 main #square-5 {
   top: 80vh;
@@ -2989,8 +2989,48 @@ main #square-9 {
   left: 55vw; }
 
 main #square-10 {
-  top: 25vh;
+  top: 200vh;
+  left: 5vw; }
+
+main #square-11 {
+  top: 95vh;
+  left: 62vw; }
+
+main #square-12 {
+  top: 150vh;
+  left: 65vw; }
+
+main #square-13 {
+  top: 160vh;
+  left: 5vw; }
+
+main #square-14 {
+  top: 165vh;
   left: 80vw; }
+
+main #square-15 {
+  top: 170vh;
+  left: 10vw; }
+
+main #square-16 {
+  top: 185vh;
+  left: 35vw; }
+
+main #square-17 {
+  top: 190vh;
+  left: 75vw; }
+
+main #square-18 {
+  top: 225vh;
+  left: 45vw; }
+
+main #square-19 {
+  top: 240vh;
+  left: 20vw; }
+
+main #square-20 {
+  top: 245vh;
+  left: 85vw; }
 
 main #welcome-row {
   height: 85vh; }
@@ -3040,6 +3080,15 @@ main #about-row #about-headline p {
 @media only screen and (max-width: 768px) {
   main #about-row #about-headline p {
     text-align: justify; } }
+
+main #about-row #img-portrait {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: auto;
+  border: 2px dashed #FF9900;
+  border-radius: 50%;
+  display: none; }
 
 main #contact-row #contact-headline {
   margin: 60px 0;
