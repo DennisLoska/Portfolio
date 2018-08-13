@@ -2,6 +2,7 @@ var express = require('express')
 var app = express()
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser')
+var options = require('./options');
 var router = express.Router();
 
 app.set('port', (process.env.PORT || 5001))
@@ -29,14 +30,14 @@ function handleSendMail(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'codedennis1@gmail.com',
-            pass: '5a934d20'
+            user: options.storageConfig.user,
+            pass: options.storageConfig.password
         }
     });
 
     var mailOptions = {
         from: email,
-        to: 'd.loska@hotmail.de',
+        to: options.storageConfig.mailto,
         subject: 'Contact message from ' + name + ' - ' + phone + ' - ' + email ,
         text: message
     };

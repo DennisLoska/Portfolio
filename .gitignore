@@ -2,6 +2,7 @@
 node_modules/
 Procfile
 public/
+config.json
 
 # Maven
 target/
