@@ -36,9 +36,16 @@ $(function () {
                         classToAdd: 'visible animated bounceInDown',
                         offset: 100
                     });
-                } else {
+                } else if (!data.success && data.responseCode != 1) {
                     var failed = '<div class="row justify-content-center align-items-center" id="form-response-failed">\n                      <div class="col-12 text-center">\n                        <h2 class="component-l">Sorry, something went wrong here. Please try it again later, if it does not work anytime soon!</h2>\n                       </div>\n                      </div>';
                     $('#form-info').addClass("hidden").html(failed).viewportChecker({
+                        classToAdd: 'visible animated bounceInDown',
+                        repeat: true,
+                        offset: 100
+                    });
+                } else if (data.responseCode == 1) {
+                    var no_captcha = '<div class="row justify-content-center align-items-center" id="form-response-failed">\n                  <div class="col-12 text-center">\n                    <h2 class="component-l">Don\'t forget to solve the captcha!</h2>\n                   </div>\n                  </div>';
+                    $('#form-info').addClass("hidden").html(no_captcha).viewportChecker({
                         classToAdd: 'visible animated bounceInDown',
                         repeat: true,
                         offset: 100

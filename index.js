@@ -3,6 +3,7 @@ var app = express()
 var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser')
 var options = require('./options');
+var request = require('request');
 var path = require("path");
 var router = express.Router();
 
@@ -31,6 +32,7 @@ function handleSendMail(req, res) {
     var email = req.body.email
     var phone = req.body.phone
     var message = req.body.message
+    var recaptcha = req.body.recaptcha
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -47,17 +49,41 @@ function handleSendMail(req, res) {
         text: message
     };
 
-    transporter.sendMail(mailOptions, function (error, info) {
-        if (error) {
-            console.log(error);
+    // g-recaptcha-response is the key that browser will generate upon form submit.
+    // if its blank or null means user has not selected the captcha, so return the error.
+    if (recaptcha === undefined || recaptcha === '' || recaptcha === null) {
+        return res.json({
+            "responseCode": 1,
+            "responseDesc": "Please select captcha"
+        });
+    }
+    // Put your secret key here.
+    var secretKey = options.storageConfig.secret;
+    // req.connection.remoteAddress will provide IP address of connected user.
+    var verificationUrl =
+        "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + recaptcha + "&remoteip=" + req.connection.remoteAddress;
+    // Hitting GET request to the URL, Google will respond with success or error scenario.
+    request(verificationUrl, function (error, response, body) {
+        body = JSON.parse(body);
+        // Success will be true or false depending upon captcha validation.
+        if (body.success !== undefined && !body.success) {
             res.json({
-                success: false
-            })
-        } else {
-            console.log('Email sent: ' + info.response);
-            res.json({
-                success: true
-            })
+                "responseCode": 1,
+                "responseDesc": "Failed captcha verification"
+            });
         }
+        transporter.sendMail(mailOptions, function (error, info) {
+            if (error) {
+                console.log(error);
+                res.json({
+                    "success": false
+                })
+            } else {
+                console.log('Email sent: ' + info.response);
+                res.json({
+                    "success": true
+                })
+            }
+        });
     });
 }

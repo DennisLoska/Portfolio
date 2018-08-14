@@ -40,7 +40,7 @@ $(function () {
                         classToAdd: 'visible animated bounceInDown',
                         offset: 100,
                     });
-                } else {
+                } else if(!data.success && data.responseCode != 1) {
                     let failed =
                         `<div class="row justify-content-center align-items-center" id="form-response-failed">
                       <div class="col-12 text-center">
@@ -52,6 +52,18 @@ $(function () {
                         repeat: true,
                         offset: 100,
                     });
+                } else if(data.responseCode == 1) {
+                    let no_captcha =
+                    `<div class="row justify-content-center align-items-center" id="form-response-failed">
+                  <div class="col-12 text-center">
+                    <h2 class="component-l">Don't forget to solve the captcha!</h2>
+                   </div>
+                  </div>`
+                $('#form-info').addClass("hidden").html(no_captcha).viewportChecker({
+                    classToAdd: 'visible animated bounceInDown',
+                    repeat: true,
+                    offset: 100,
+                });
                 }
             }
         });
