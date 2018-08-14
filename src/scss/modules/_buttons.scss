@@ -15,3 +15,34 @@
 #form-btn:hover {
     background-color: #333333;
 }
+
+$size: 70px;
+#up-btn {
+    width: $size*2;
+    height: $size;
+    background-color: #333333;
+    margin: auto;
+    border-top-left-radius: $size*2;
+    border-top-right-radius: $size*2;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    color: $orange;
+    -webkit-transition-property: color, background-color; /* Safari */
+    -webkit-transition-duration: 0.5s; /* Safari */
+    -webkit-transition-delay: 0s; /* Safari */
+    transition-property: color, background-color;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+#up-btn:hover {
+    color: $blue;
+    background-color: $black;
+    cursor: pointer;
+    -ms-transform: translate(0px, -15px); /* IE 9 */
+    -webkit-transform: translate(0px, -15px); /* Safari */
+    transform: translate(0px, -15px);
+}

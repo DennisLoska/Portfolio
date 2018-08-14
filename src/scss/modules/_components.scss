@@ -1,12 +1,17 @@
-.hidden{
-    opacity:0;
+.hidden {
+    opacity: 0;
 }
-.visible{
-    opacity:1;
+
+.visible {
+    opacity: 1;
 }
 
 .circle-visible {
     opacity: .7;
+}
+
+.blue-border {
+    border-color: $blue !important;
 }
 
 #form-response {

@@ -4,7 +4,7 @@ function loadSkills() {
     let once = false;
     let waypoints_skills = $('#skills').waypoint({
         handler: function () {
-            let skillset = [100, 90, 65, 60, 80, 50, 40, 20];
+            let skillset = [97.5, 90, 65, 60, 80, 50, 40, 20];
 
             function loadBars(time) {
                 let timeOut;
@@ -50,8 +50,12 @@ $(document).ready(function () {
         classToAdd: 'circle-visible animated bounceInUp',
         offset: 150,
     });
-    $('#card-wrapper').addClass("hidden").viewportChecker({
-        classToAdd: 'circle-visible animated bounceInUp',
+    $('#project-info').addClass("hidden").viewportChecker({
+        classToAdd: 'circle-visible animated bounceInRight',
+        offset: 350,
+    });
+    $('.card-wrapper').addClass("hidden").viewportChecker({
+        classToAdd: 'circle-visible animated bounceInRight',
         offset: 350,
     });
 });
@@ -85,5 +89,10 @@ $(document).ready(function () {
             scrollTop: $(destination).offset().top
         }, 'slow');
     });
+    $('#up-btn').click(function(){
+        $('html,body').animate({
+            scrollTop: $('#nav-list').offset().top
+        }, 'slow');
+    })
 });
 /* navigation animation END */

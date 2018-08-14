@@ -2,7 +2,7 @@ $(function () {
     $('#contact-form').submit(function (event) {
         /* stop form from submitting normally */
         event.preventDefault();
-
+        $('#form-btn').addClass('blue-border');
         /* get the action attribute from the <form action=""> element */
         let form = $(this);
         let url = form.attr('action');

@@ -2942,6 +2942,10 @@ header nav #burger-bar {
 .hide-navbar {
   display: block !important; }
 
+footer {
+  height: 24rem;
+  background-color: #333333; }
+
 /* MODULES - Individual site components */
 main .floating-square {
   position: absolute;
@@ -3103,6 +3107,9 @@ main #project-row p {
   main #project-row p {
     text-align: justify; } }
 
+main #project-row .card-wrapper {
+  padding: 0px; }
+
 main #project-row .project-card {
   height: auto;
   background-color: #333;
@@ -3184,6 +3191,39 @@ main #project-row .project-name {
 #form-btn:hover {
   background-color: #333333; }
 
+#up-btn {
+  width: 140px;
+  height: 70px;
+  background-color: #333333;
+  margin: auto;
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  color: #FF9900;
+  -webkit-transition-property: color, background-color;
+  /* Safari */
+  -webkit-transition-duration: 0.5s;
+  /* Safari */
+  -webkit-transition-delay: 0s;
+  /* Safari */
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+  transition-delay: 0s; }
+
+#up-btn:hover {
+  color: #2956B2;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  -ms-transform: translate(0px, -15px);
+  /* IE 9 */
+  -webkit-transform: translate(0px, -15px);
+  /* Safari */
+  transform: translate(0px, -15px); }
+
 .hidden {
   opacity: 0; }
 
@@ -3192,6 +3232,9 @@ main #project-row .project-name {
 
 .circle-visible {
   opacity: .7; }
+
+.blue-border {
+  border-color: #2956B2 !important; }
 
 #form-response {
   height: 32rem; }
