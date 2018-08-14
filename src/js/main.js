@@ -16,7 +16,8 @@ $(function () {
             "name": name,
             "email": email,
             "phone": phone,
-            "message": message
+            "message": message,
+            "recaptcha": grecaptcha.getResponse()
         };
 
         $.ajax({
