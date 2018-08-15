@@ -3100,6 +3100,8 @@ main #project-row .project-name {
       border-radius: 0;
       border: 2px solid #FF9900;
       background-color: #333333; }
+    #contact-row #contact-form .form-control:focus {
+      border-color: #fff; }
     #contact-row #contact-form .form-row {
       margin: 10px 0; }
     #contact-row #contact-form .g-recaptcha {

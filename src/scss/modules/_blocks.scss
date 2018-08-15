@@ -160,6 +160,9 @@ main {
             border: 2px solid $orange;
             background-color: $gray;
         }
+        .form-control:focus {
+            border-color: #fff;
+        }
         .form-row {
             margin: 10px 0;
         }
