@@ -2907,9 +2907,6 @@ header nav #nav-list {
       color: #ffffff; }
     header nav #nav-list .nav-item a:hover {
       text-decoration: none; }
-  header nav #nav-list .nav-item:hover {
-    border-bottom: 2px solid #FF9900;
-    margin-bottom: -2px; }
 
 header nav #burger-bar {
   display: none; }
@@ -3080,10 +3077,7 @@ main #project-row .project-name {
 #contact-row #contact-form {
   margin: 50px 0 100px 0; }
   #contact-row #contact-form .form-control {
-    border-radius: 0;
-    border: 2px solid #FF9900; }
-  #contact-row #contact-form .form-control:focus {
-    border-color: #2956B2; }
+    border-radius: 0; }
   #contact-row #contact-form .form-row {
     margin: 10px 0; }
   #contact-row #contact-form .g-recaptcha {
@@ -3166,6 +3160,32 @@ main #project-row .project-name {
 #form-response-failed {
   height: 6rem;
   color: #FF9900; }
+
+.underline-from-left {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden; }
+  .underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #FF9900;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .underline-from-left:hover:before {
+    right: 0; }
 
 .floating-square {
   position: absolute;

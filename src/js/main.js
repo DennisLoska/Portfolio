@@ -1,3 +1,4 @@
+/* AJAX contact form BEGIN */
 $(function () {    
     $('#contact-form').submit(function (event) {
         /* stop form from submitting normally */
@@ -10,12 +11,14 @@ $(function () {
         let name = $('#input-name').val();
         let email = $('#input-email').val();
         let phone = $('#input-phone').val();
+        let subject = $('#input-subject').val();
         let message = $('#input-message').val();
 
         let contact_info = {
             "name": name,
             "email": email,
             "phone": phone,
+            "subject": subject,
             "message": message,
             "recaptcha": grecaptcha.getResponse()
         };
@@ -69,3 +72,4 @@ $(function () {
         });
     })
 })
+/* AJAX contact form END */

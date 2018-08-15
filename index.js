@@ -31,6 +31,7 @@ function handleSendMail(req, res) {
     var name = req.body.name
     var email = req.body.email
     var phone = req.body.phone
+    var subject = req.body.subject
     var message = req.body.message
     var recaptcha = req.body.recaptcha
 
@@ -45,7 +46,7 @@ function handleSendMail(req, res) {
     var mailOptions = {
         from: email,
         to: options.storageConfig.mailto,
-        subject: 'Contact message from ' + name + ' - ' + phone + ' - ' + email,
+        subject: "Portfolio - " + name + " - " + email + " - " + phone + " - " +  subject,
         text: message
     };
 

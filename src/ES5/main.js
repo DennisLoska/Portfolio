@@ -1,5 +1,6 @@
 'use strict';
 
+/* AJAX contact form BEGIN */
 $(function () {
     $('#contact-form').submit(function (event) {
         /* stop form from submitting normally */
@@ -12,12 +13,14 @@ $(function () {
         var name = $('#input-name').val();
         var email = $('#input-email').val();
         var phone = $('#input-phone').val();
+        var subject = $('#input-subject').val();
         var message = $('#input-message').val();
 
         var contact_info = {
             "name": name,
             "email": email,
             "phone": phone,
+            "subject": subject,
             "message": message,
             "recaptcha": grecaptcha.getResponse()
         };
@@ -55,3 +58,4 @@ $(function () {
         });
     });
 });
+/* AJAX contact form END */
