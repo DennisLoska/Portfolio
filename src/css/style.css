@@ -2940,8 +2940,28 @@ header nav #burger-bar {
   display: block !important; }
 
 footer {
-  height: 24rem;
   background-color: #333333; }
+  footer #footer-container {
+    height: 100%; }
+  footer #footer-info-row {
+    padding-top: 50px; }
+    footer #footer-info-row h2 {
+      color: #ffffff; }
+    footer #footer-info-row p {
+      color: #007bff; }
+  footer #footer-link-row {
+    padding: 50px 0 50px 0; }
+    footer #footer-link-row ul {
+      list-style-type: none;
+      padding: 0; }
+      footer #footer-link-row ul li a {
+        color: #FF9900; }
+      footer #footer-link-row ul li a:hover {
+        color: #ffffff; }
+  footer #copyright-row {
+    padding-bottom: 25px; }
+    footer #copyright-row span {
+      color: #ffffff; }
 
 /* MODULES - Individual site components */
 main #welcome-row {
@@ -3065,24 +3085,26 @@ main #project-row .project-name {
   -moz-transform: skew(-20deg);
   -o-transform: skew(-20deg); }
 
-#contact-row #contact-headline {
-  margin: 60px 0 60px 0;
-  text-align: center;
-  font-size: 4em; }
-
-#contact-row p {
-  font-size: 1.2em;
-  text-align: center; }
-
-#contact-row #contact-form {
-  margin: 50px 0 100px 0; }
-  #contact-row #contact-form .form-control {
-    border-radius: 0; }
-  #contact-row #contact-form .form-row {
-    margin: 10px 0; }
-  #contact-row #contact-form .g-recaptcha {
-    margin-top: 24px;
-    width: 304px; }
+#contact-row {
+  margin-top: 2em; }
+  #contact-row #contact-headline {
+    margin: 60px 0 60px 0;
+    text-align: center;
+    font-size: 4em; }
+  #contact-row p {
+    font-size: 1.2em;
+    text-align: center; }
+  #contact-row #contact-form {
+    margin: 50px 0 100px 0; }
+    #contact-row #contact-form .form-control {
+      border-radius: 0;
+      border: 2px solid #FF9900;
+      background-color: #333333; }
+    #contact-row #contact-form .form-row {
+      margin: 10px 0; }
+    #contact-row #contact-form .g-recaptcha {
+      margin-top: 24px;
+      width: 304px; }
 
 #form-btn {
   text-align: center;
@@ -3105,6 +3127,7 @@ main #project-row .project-name {
   height: 70px;
   background-color: #333333;
   margin: auto;
+  margin-top: 3em;
   border-top-left-radius: 140px;
   border-top-right-radius: 140px;
   margin-bottom: 0;

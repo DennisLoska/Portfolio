@@ -1,4 +1,36 @@
 footer {
-    height: 24rem;
     background-color: #333333;
+    #footer-container {
+        height: 100%;
+    }
+    #footer-info-row {
+        padding-top: 50px;
+        h2 {
+            color: #ffffff;
+        }
+        p {
+            color: $text_blue;
+        }
+    }
+    #footer-link-row {
+        padding: 50px 0 50px 0;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                a {
+                    color: $orange;
+                }
+                a:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    #copyright-row {
+        padding-bottom: 25px;
+        span {
+            color: #ffffff;
+        }
+    }
 }
