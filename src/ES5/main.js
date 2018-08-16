@@ -59,3 +59,61 @@ $(function () {
     });
 });
 /* AJAX contact form END */
+
+/* day-night BEGIN */
+$(function () {
+    $('#toggle--daynight').click(function () {
+        var checked = $(this).prop('checked');
+        console.log(checked);
+
+        if (checked) {
+            $('html').css('background-color', '#ffffff');
+            $('html').css('color', '#000000');
+            $('body').css('background-color', '#ffffff');
+            $('main').css('background-color', '#ffffff');
+            $('main').css('color', '#000000');
+            $('header').css('background-color', '#ffffff');
+            $('.nav-item>a').css('color', '#000000');
+            $('#form-btn').css('color', '#000000');
+            $('#form-btn').css('background-color', '#ffffff');
+            $('#skills').css('background-color', '#dee2e6');
+            $('.form-control').css('background-color', '#dee2e6');
+
+            $("#form-btn").hover(function () {
+                $(this).css("background-color", "#dee2e6");
+            }, function () {
+                $(this).css("background-color", "#ffffff");
+            });
+            $("#up-btn").hover(function () {
+                $(this).css("background-color", "#ffffff");
+            }, function () {
+                $(this).css("background-color", "#333333");
+            });
+        } else {
+            $('html').css('background-color', '#1a1a1a');
+            $('html').css('color', '#ffffff');
+            $('body').css('background-color', '#1a1a1a');
+            $('main').css('background-color', '#1a1a1a');
+            $('main').css('color', '#ffffff');
+            $('header').css('background-color', '#1a1a1a');
+            $('.nav-item>a').css('color', '#ffffff');
+            $('#form-btn').css('color', '#ffffff');
+            $('#form-btn').css('background-color', '#1a1a1a');
+            $('#skills').css('background-color', '#333333');
+            $('.form-control').css('background-color', '#333333');
+
+            $("#form-btn").hover(function () {
+                $(this).css("background-color", "#333333");
+            }, function () {
+                $(this).css("background-color", "#1a1a1a");
+            });
+            $("#up-btn").hover(function () {
+                $(this).css("background-color", "#1a1a1a");
+            }, function () {
+                $(this).css("background-color", "#33333");
+            });
+        }
+    });
+});
+
+/* day-night END */

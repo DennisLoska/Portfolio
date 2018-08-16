@@ -51,11 +51,11 @@ $(document).ready(function () {
         offset: 150,
     });
     $('#project-info').addClass("hidden").viewportChecker({
-        classToAdd: 'circle-visible animated bounceInRight',
+        classToAdd: 'visible animated bounceInRight',
         offset: 350,
     });
     $('.card-wrapper').addClass("hidden").viewportChecker({
-        classToAdd: 'circle-visible animated bounceInRight',
+        classToAdd: 'visible animated bounceInRight',
         offset: 350,
     });
 });

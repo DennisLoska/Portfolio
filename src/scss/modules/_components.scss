@@ -37,25 +37,27 @@
     position: relative;
     overflow: hidden;
     &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 0;
-      right: 100%;
-      bottom: 0;
-      background: $orange;
-      height: 4px;
-      -webkit-transition-property: right;
-      transition-property: right;
-      -webkit-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-      -webkit-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: $orange;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
     }
     &:hover:before {
-      right: 0;
+        right: 0;
     }
-  }
+}
+
+/* floating-circles BEGIN */
 
 .floating-square {
     position: absolute;
@@ -65,83 +67,105 @@
     width: 50px;
     height: 50px;
 }
+
 #square-1 {
     top: 115vh;
     left: 85vw;
 }
+
 #square-2 {
     top: 27vh;
     left: 85vw;
 }
+
 #square-3 {
     top: 125vh;
     left: 55vw;
 }
+
 #square-4 {
     top: 118vh;
     left: 4vw;
 }
+
 #square-5 {
     top: 80vh;
     left: 10vw;
 }
+
 #square-6 {
     top: 80vh;
     left: 82vw;
 }
+
 #square-7 {
     top: 63vh;
     left: 27vw;
 }
+
 #square-8 {
     top: 24vh;
     left: 12vw;
 }
+
 #square-9 {
     top: 18vh;
     left: 55vw;
 }
+
 #square-10 {
     top: 200vh;
     left: 5vw;
 }
+
 #square-11 {
     top: 95vh;
     left: 62vw;
 }
+
 #square-12 {
     top: 150vh;
     left: 65vw;
 }
+
 #square-13 {
     top: 160vh;
     left: 5vw;
 }
+
 #square-14 {
     top: 165vh;
     left: 80vw;
 }
+
 #square-15 {
     top: 170vh;
     left: 10vw;
 }
+
 #square-16 {
     top: 185vh;
     left: 35vw;
 }
+
 #square-17 {
     top: 190vh;
     left: 75vw;
 }
+
 #square-18 {
     top: 225vh;
     left: 45vw;
 }
+
 #square-19 {
     top: 240vh;
     left: 20vw;
 }
+
 #square-20 {
     top: 245vh;
     left: 85vw;
 }
+
+/* floating-circles END*/
