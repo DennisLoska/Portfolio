@@ -70,6 +70,7 @@ $(function () {
             $('body').css('background-color', '#ffffff');
             $('main').css('background-color', '#ffffff');
             $('main').css('color', '#000000');
+            if (window.innerWidth <= 768) $('#nav-list').css('background-color', '#ffffff');
             $('header').css('background-color', '#ffffff');
             $('.nav-item>a').css('color', '#000000');
             $('#form-btn').css('color', '#000000');
@@ -93,6 +94,7 @@ $(function () {
             $('body').css('background-color', '#1a1a1a');
             $('main').css('background-color', '#1a1a1a');
             $('main').css('color', '#ffffff');
+            if (window.innerWidth <= 768) $('#nav-list').css('background-color', '#1a1a1a');
             $('header').css('background-color', '#1a1a1a');
             $('.nav-item>a').css('color', '#ffffff');
             $('#form-btn').css('color', '#ffffff');
