@@ -64,8 +64,6 @@ $(function () {
 $(function () {
     $('#toggle--daynight').click(function () {
         var checked = $(this).prop('checked');
-        console.log(checked);
-
         if (checked) {
             $('html').css('background-color', '#ffffff');
             $('html').css('color', '#000000');
