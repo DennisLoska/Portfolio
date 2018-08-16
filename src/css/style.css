@@ -3010,11 +3010,8 @@ main #about-row #about-headline h2 {
   font-size: 4em; }
 
 main #about-row #about-headline p {
-  font-size: 1.2em; }
-
-@media only screen and (max-width: 768px) {
-  main #about-row #about-headline p {
-    text-align: justify; } }
+  font-size: 1.2em;
+  text-align: justify; }
 
 main #about-row #img-portrait {
   width: 80%;
@@ -3031,11 +3028,8 @@ main #project-row #project-headline {
 
 main #project-row p {
   font-size: 1.2em;
-  margin-bottom: 5rem; }
-
-@media only screen and (max-width: 768px) {
-  main #project-row p {
-    text-align: justify; } }
+  margin-bottom: 5rem;
+  text-align: justify; }
 
 main #project-row .card-wrapper {
   padding: 0px; }
