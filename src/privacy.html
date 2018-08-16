@@ -14,10 +14,76 @@
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/popper.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script>
+        /* darklight-theme BEGIN */
+
+        $(function () {
+            $('#toggle--daynight').click(function () {
+                let checked = $(this).prop('checked');
+                if (checked) {
+                    $('html').css('background-color', '#ffffff');
+                    $('html').css('color', '#000000');
+                    $('body').css('background-color', '#ffffff');
+                    $('main').css('background-color', '#ffffff');
+                    $('main').css('color', '#000000');
+                    if (window.innerWidth <= 768)
+                        $('#nav-list').css('background-color', '#ffffff');
+                    $('header').css('background-color', '#ffffff');
+                    $('.nav-item>a').css('color', '#000000');
+                    $('#form-btn').css('color', '#000000');
+                    $('#form-btn').css('background-color', '#ffffff');
+
+                    $("#up-btn").hover(function () {
+                        $(this).css("background-color", "#ffffff")
+                    }, function () {
+                        $(this).css("background-color", "#333333");
+                    });
+                } else {
+                    $('html').css('background-color', '#1a1a1a');
+                    $('html').css('color', '#ffffff');
+                    $('body').css('background-color', '#1a1a1a');
+                    $('main').css('background-color', '#1a1a1a');
+                    $('main').css('color', '#ffffff');
+                    if (window.innerWidth <= 768)
+                        $('#nav-list').css('background-color', '#1a1a1a');
+                    $('header').css('background-color', '#1a1a1a');
+                    $('.nav-item>a').css('color', '#ffffff');
+                    $('#form-btn').css('color', '#ffffff');
+                    $('#form-btn').css('background-color', '#1a1a1a');
+
+                    $("#up-btn").hover(function () {
+                        $(this).css("background-color", "#1a1a1a")
+                    }, function () {
+                        $(this).css("background-color", "#33333");
+                    });
+                }
+            })
+        })
+
+        /* darklight-theme END */
+
+        /* up-btn BEGIN */
+
+        $(document).ready(function () {
+            $('#up-btn').click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#nav-list').offset().top
+                }, 'slow');
+            })
+        })
+
+        /* up-btn BEGIN */
+    </script>
     <title>Privacy - Dennis Loska</title>
 </head>
 
 <body>
+    <div class="toggle toggle--daynight" id="day-night-btn">
+        <input type="checkbox" id="toggle--daynight" class="toggle--checkbox">
+        <label class="toggle--btn" for="toggle--daynight">
+            <span class="toggle--feature"></span>
+        </label>
+    </div>
     <header>
         <nav class="container">
             <div id="burger-bar" class="row lg-invisible">
@@ -192,7 +258,8 @@
                             <p>You can opt-out of having made your activity on my website available to Google Analytics by installing
                                 the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript
                                 (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits
-                                activity.</p>
+                                activity.
+                            </p>
                             <p>For more information on the privacy practices of Google, please visit the Google Privacy & Terms
                                 web page:
                                 <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a>
@@ -226,9 +293,67 @@
                         <li>By visiting this page on my website: https://www.dennisloska.com/#contact-row</li>
                     </ul>
                 </div>
+                <div class="col-12">
+                    <div id="up-btn">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="container" id="footer-container">
+            <div id="footer-info-row" class="row text-center text-md-left align-items-center">
+                <div class="col-12">
+                    <h2>Dennis Loska</h2>
+                    <p>
+                        I'm a computer science student based in Berlin
+                        <br> and aspiring full&shy;stack web developer.
+                    </p>
+                </div>
+            </div>
+            <div id="footer-link-row" class="row justify-content-start">
+                <div class="footer-links col-12 col-md-6">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li class="">
+                            <a class="" href="#skills-row">Skills</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#about-row">About</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#project-row">Projects</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#contact-row">Contact</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="/privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links col-12 col-md-6 justify-content-end">
+                    <h4>Social</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/DennisLoska" target="_blank">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/dennisloska/" target="_blank">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="copyright-row" class="row text-center text-md-left align-items-center">
+                <div class="col-12">
+                    <span>
+                        Copyright Dennis Loska 2018 ©
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

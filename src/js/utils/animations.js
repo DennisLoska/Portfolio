@@ -4,11 +4,12 @@ function loadSkills() {
     let once = false;
     let waypoints_skills = $('#skills').waypoint({
         handler: function () {
-            let skillset = [97.5, 90, 65, 60, 80, 50, 40, 20];
+            let skillset = [95, 90, 65, 60, 80, 50, 40, 20];
 
             function loadBars(time) {
                 let timeOut;
                 $('.skill-percent').each(function (i) {
+                    $(this).text(skillset[i] + '%')
                     if (time <= skillset[i])
                         $(this).css('width', time + '%');
                     else clearTimeout(timeOut);

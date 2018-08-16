@@ -37,8 +37,8 @@ $(function () {
                         <h2 class="component-l">Everything worked this time!</h2>
                         <img id="success-img" src="img/mail_checked.png" alt=Email successsfully send!">
                        </div>
-                      </div>`
-                    $('#form-wrapper').addClass("hidden").html(response)
+                      </div>`;
+                    $('#form-wrapper').addClass("hidden").html(response);
                     $('#form-response').viewportChecker({
                         classToAdd: 'visible animated bounceInDown',
                         offset: 100,

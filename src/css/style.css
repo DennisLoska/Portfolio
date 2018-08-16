@@ -3003,7 +3003,11 @@ main #skills-row #skills {
       main #skills-row #skills .skill .skill-bar .skill-percent {
         background-color: #2956B2;
         height: 50px;
-        width: 0%; }
+        width: 0%;
+        text-align: right;
+        line-height: 50px;
+        padding-right: 15px;
+        font-size: 20px; }
 
 main #about-row #about-headline h2 {
   margin: 60px 0;
