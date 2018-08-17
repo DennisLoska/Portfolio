@@ -3097,9 +3097,10 @@ main #project-row .project-name {
     #contact-row #contact-form .form-control {
       border-radius: 0;
       border: 2px solid #FF9900;
-      background-color: #333333; }
+      background-color: #333333;
+      color: #ffffff; }
     #contact-row #contact-form .form-control:focus {
-      border-color: #fff; }
+      border-color: #ffffff; }
     #contact-row #contact-form .form-row {
       margin: 10px 0; }
     #contact-row #contact-form .g-recaptcha {

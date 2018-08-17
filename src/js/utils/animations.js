@@ -90,7 +90,7 @@ $(document).ready(function () {
             scrollTop: $(destination).offset().top
         }, 'slow');
     });
-    $('#up-btn').click(function(){
+    $('#up-btn').click(function () {
         $('html,body').animate({
             scrollTop: $('#nav-list').offset().top
         }, 'slow');

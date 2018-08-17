@@ -155,9 +155,10 @@ main {
             border-radius: 0;
             border: 2px solid $orange;
             background-color: $gray;
+            color: #ffffff;
         }
         .form-control:focus {
-            border-color: #fff;
+            border-color: #ffffff;
         }
         .form-row {
             margin: 10px 0;
