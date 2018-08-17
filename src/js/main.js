@@ -100,7 +100,7 @@ function handleChecked() {
     $('body').css('background-color', '#ffffff');
     $('main').css('background-color', '#ffffff');
     $('main').css('color', '#000000');
-    $('.floating-square').css('border-color', '#FF9900');
+    $('.fs-blue').css('border-color', '#FF9900');
     if (window.innerWidth <= 768)
         $('#nav-list').css('background-color', '#ffffff');
     $('header').css('background-color', '#ffffff');
@@ -129,7 +129,7 @@ function handleUnchecked() {
     $('body').css('background-color', '#1a1a1a');
     $('main').css('background-color', '#1a1a1a');
     $('main').css('color', '#ffffff');
-    $('.floating-square').css('border-color', '#2956B2')
+    $('.fs-blue').css('border-color', '#2956B2')
     if (window.innerWidth <= 768)
         $('#nav-list').css('background-color', '#1a1a1a');
     $('header').css('background-color', '#1a1a1a');

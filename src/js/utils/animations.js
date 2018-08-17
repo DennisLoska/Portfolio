@@ -47,8 +47,12 @@ $(document).ready(function () {
         classToAdd: 'visible animated bounceInUp',
         offset: 350,
     });
-    $('.floating-square').addClass("hidden").viewportChecker({
+    $('.fs-blue').addClass("hidden").viewportChecker({
         classToAdd: 'circle-visible animated bounceInUp',
+        offset: 150,
+    });
+    $('.fs-orange').addClass("hidden").viewportChecker({
+        classToAdd: 'circle-visible animated bounceInDown',
         offset: 150,
     });
     $('#project-info').addClass("hidden").viewportChecker({
