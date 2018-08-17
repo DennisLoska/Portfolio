@@ -4,7 +4,7 @@ function handleSuccess() {
     let response =
         `<div class="row justify-content-center align-items-center" id="form-response">
         <div class="col-12 text-center">
-        <h2 class="component-l">Everything worked this time!</h2>
+        <h2 class="component-l">Everything worked fine this time!</h2>
         <img id="success-img" src="img/mail_checked.png" alt=Email successsfully send!">
         </div>
         </div>`;
@@ -108,7 +108,7 @@ function handleChecked() {
     $('#form-btn').css('color', '#000000');
     $('#form-btn').css('background-color', '#ffffff');
     $('#skills').css('background-color', '#dee2e6')
-    $('.form-control').css('background-color', '#dee2e6')
+    $('.form-control').css('background-color', 'wheat')
     $('.form-control').css('color', '#000000')
 
     $("#form-btn").hover(function () {

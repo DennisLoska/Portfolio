@@ -3,7 +3,7 @@
 /* AJAX contact form BEGIN */
 
 function handleSuccess() {
-    var response = '<div class="row justify-content-center align-items-center" id="form-response">\n        <div class="col-12 text-center">\n        <h2 class="component-l">Everything worked this time!</h2>\n        <img id="success-img" src="img/mail_checked.png" alt=Email successsfully send!">\n        </div>\n        </div>';
+    var response = '<div class="row justify-content-center align-items-center" id="form-response">\n        <div class="col-12 text-center">\n        <h2 class="component-l">Everything worked fine this time!</h2>\n        <img id="success-img" src="img/mail_checked.png" alt=Email successsfully send!">\n        </div>\n        </div>';
     $('#form-wrapper').addClass("hidden").html(response);
     $('#form-response').viewportChecker({
         classToAdd: 'visible animated bounceInDown',
@@ -93,7 +93,7 @@ function handleChecked() {
     $('#form-btn').css('color', '#000000');
     $('#form-btn').css('background-color', '#ffffff');
     $('#skills').css('background-color', '#dee2e6');
-    $('.form-control').css('background-color', '#dee2e6');
+    $('.form-control').css('background-color', 'wheat');
     $('.form-control').css('color', '#000000');
 
     $("#form-btn").hover(function () {
