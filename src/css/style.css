@@ -3106,6 +3106,8 @@ main #project-row .project-name {
     #contact-row #contact-form .g-recaptcha {
       margin-top: 24px;
       width: 304px; }
+    #contact-row #contact-form .mobile-response {
+      padding-top: 20px; }
 
 /* form-btn BEGIN */
 #form-btn {
@@ -3333,8 +3335,14 @@ main #project-row .project-name {
 .hidden {
   opacity: 0; }
 
+.hidden-d {
+  display: none; }
+
 .visible {
   opacity: 1; }
+
+.visible-d {
+  display: block; }
 
 .circle-visible {
   opacity: .7; }

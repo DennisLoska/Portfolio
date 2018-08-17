@@ -2,8 +2,16 @@
     opacity: 0;
 }
 
+.hidden-d {
+    display: none;
+}
+
 .visible {
     opacity: 1;
+}
+
+.visible-d {
+    display: block;
 }
 
 .circle-visible {

@@ -66,11 +66,25 @@ $(function () {
             dataType: 'json',
             success: function success(data) {
                 if (data.success) {
-                    handleSuccess();
+                    if (window.innerWidth >= 768) {
+                        handleSuccess();
+                    } else {
+                        $('#mobile-success').removeClass('hidden-d').addClass('visible-d');
+                        $('#mobile-nocaptcha').removeClass('visible-d').addClass('hidden-d');
+                    }
                 } else if (!data.success && data.responseCode != 1) {
-                    handleError();
+                    if (window.innerWidth >= 768) {
+                        handleError();
+                    } else {
+                        $('#mobile-error').removeClass('hidden-d').addClass('visible-d');
+                        $('#mobile-nocaptcha').removeClass('visible-d').addClass('hidden-d');
+                    }
                 } else if (data.responseCode == 1) {
-                    handleNoCaptcha();
+                    if (window.innerWidth >= 768) {
+                        handleNoCaptcha();
+                    } else {
+                        $('#mobile-nocaptcha').removeClass('hidden-d').addClass('visible-d');
+                    }
                 }
             }
         });
