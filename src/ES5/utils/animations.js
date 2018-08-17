@@ -30,39 +30,41 @@ function loadSkills() {
 
 /* fade-in animations based on animate.css BEGIN */
 $(document).ready(function () {
-    $('.component-l').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated bounceInRight',
-        offset: 350
-    });
-    $('.component-r').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated bounceInLeft',
-        offset: 350
-    });
     $('#skills').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated bounceInUp',
         offset: 350,
         callbackFunction: loadSkills()
     });
-    $('#form-wrapper').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated bounceInUp',
-        offset: 350
-    });
-    $('.fs-blue').addClass("hidden").viewportChecker({
-        classToAdd: 'circle-visible animated bounceInUp',
-        offset: 150
-    });
-    $('.fs-orange').addClass("hidden").viewportChecker({
-        classToAdd: 'circle-visible animated bounceInDown',
-        offset: 150
-    });
-    $('#project-info').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated bounceInRight',
-        offset: 350
-    });
-    $('.card-wrapper').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated bounceInRight',
-        offset: 350
-    });
+    if (window.innerWidth > 1024) {
+        $('.component-l').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInRight',
+            offset: 350
+        });
+        $('.component-r').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInLeft',
+            offset: 350
+        });
+        $('#form-wrapper').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInUp',
+            offset: 350
+        });
+        $('.fs-blue').addClass("hidden").viewportChecker({
+            classToAdd: 'circle-visible animated bounceInUp',
+            offset: 150
+        });
+        $('.fs-orange').addClass("hidden").viewportChecker({
+            classToAdd: 'circle-visible animated bounceInDown',
+            offset: 150
+        });
+        $('#project-info').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInRight',
+            offset: 350
+        });
+        $('.card-wrapper').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInRight',
+            offset: 350
+        });
+    }
 });
 /* fade-in animations based on animate.css END */
 
