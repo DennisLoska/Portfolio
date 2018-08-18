@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124199510-1"></script>
     <script>
@@ -14,8 +15,30 @@
 
         gtag('config', 'UA-124199510-1');
     </script>
-
-    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#333333"
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "border": "#2956b2",
+                        "text": "#2956b2"
+                    }
+                },
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on my website.",
+                    "dismiss": "ACCEPT",
+                    "href": "https://www.dennisloska.com/privacy"
+                }
+            })
+        });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hi, my name is Dennis and I am a fullstack web developer and aspiring Javascript specialist.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
