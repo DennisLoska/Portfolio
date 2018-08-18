@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* BASE - Base styles, vartiables, mixins, etc  */
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -3108,6 +3109,21 @@ main #project-row .project-name {
       width: 304px; }
     #contact-row #contact-form .mobile-response {
       padding-top: 20px; }
+    #contact-row #contact-form #form-compliance {
+      padding: 15px 0; }
+    #contact-row #contact-form #input-checkbox {
+      /* Double-sized Checkboxes */
+      -ms-transform: scale(2);
+      /* IE */
+      -moz-transform: scale(2);
+      /* FF */
+      -webkit-transform: scale(2);
+      /* Safari and Chrome */
+      -o-transform: scale(2);
+      /* Opera *…*/
+      transform: scale(2);
+      margin-right: 15px;
+      margin-left: 5px; }
 
 /* form-btn BEGIN */
 #form-btn {

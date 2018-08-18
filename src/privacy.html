@@ -3,6 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
+    <script>
+        // Set to the same value as the web property used on the site
+        var gaProperty = 'UA-124199510-1';
+
+        // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
+
+        // Opt-out function
+        function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+            alert('You have successfully opt-out!')
+        }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124199510-1"></script>
     <script>
@@ -304,6 +321,11 @@
                                 the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript
                                 (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits
                                 activity.
+                            </p>
+                            <p>
+                                You can also opt-out from Google Analytics from my website by clicking on this link:
+                                <br>
+                                <a href="javascript:gaOptout()">Click here to opt-out of Google Analytics</a>
                             </p>
                             <p>For more information on the privacy practices of Google, please visit the Google Privacy & Terms
                                 web page:
