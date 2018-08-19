@@ -3,7 +3,6 @@ main {
         height: 85vh;
         #welcome-headline h1 {
             font-size: 4em;
-            text-shadow: 2px 2px $blue;
         }
     }
     #skills-row {
@@ -25,6 +24,9 @@ main {
             -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
             box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
+            h3:nth-child(1) {
+                margin-top: 1.5rem;
+            }
             #skill-languages {
                 li {
                     color: #00b9ff;
@@ -35,13 +37,11 @@ main {
                     color: #16d97e;
                 }
             }
-
             #skill-frameworks {
                 li {
                     color: $orange;
                 }
             }
-
             #skill-tools {
                 li {
                     color: #ff00b2;
@@ -49,7 +49,16 @@ main {
             }
             .subskill-row {
                 .skill-list {
+                    display: flex;
+                    margin: 2rem 0;
+                    flex-wrap: wrap;
                     li {
+                        @media only screen and (min-width: 768px) {
+                            width: 50%;
+                        }
+                        @media only screen and (max-width: 767px) {
+                            width: 100%;
+                        }
                         font-size: 1.2em;
                         span {
                             color: #ffffff;

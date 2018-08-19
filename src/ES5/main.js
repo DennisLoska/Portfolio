@@ -106,9 +106,10 @@ function handleChecked() {
     $('.nav-item>a').css('color', '#000000');
     $('#form-btn').css('color', '#000000');
     $('#form-btn').css('background-color', '#ffffff');
-    $('#skills').css('background-color', '#dee2e6');
+    $('#skills').css('background-color', 'lightgoldenrodyellow');
     $('.form-control').css('background-color', 'wheat');
     $('.form-control').css('color', '#000000');
+    $('.skill-list>li>span').css('color', '#000000');
 
     $("#form-btn").hover(function () {
         $(this).css("background-color", "#dee2e6");
@@ -137,6 +138,7 @@ function handleUnchecked() {
     $('#skills').css('background-color', '#333333');
     $('.form-control').css('background-color', '#333333');
     $('.form-control').css('color', '#ffffff');
+    $('.skill-list>li>span').css('color', '#ffffff');
 
     $("#form-btn").hover(function () {
         $(this).css("background-color", "#333333");
