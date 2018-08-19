@@ -2987,28 +2987,6 @@ main #skills-row #skills {
   -webkit-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 26px -2px rgba(0, 0, 0, 0.75); }
-  main #skills-row #skills .skill {
-    display: flex; }
-    main #skills-row #skills .skill span {
-      display: block;
-      width: 30%;
-      margin: 10px 0;
-      height: 50px;
-      line-height: 50px;
-      font-weight: 700; }
-    main #skills-row #skills .skill .skill-bar {
-      width: 70%;
-      height: 50px;
-      margin: 10px 0;
-      background-color: #ffffff; }
-      main #skills-row #skills .skill .skill-bar .skill-percent {
-        background-color: #2956B2;
-        height: 50px;
-        width: 0%;
-        text-align: right;
-        line-height: 50px;
-        padding-right: 15px;
-        font-size: 20px; }
 
 main #about-row #about-headline h2 {
   margin: 60px 0;
