@@ -3585,3 +3585,7 @@ main #project-row .project-name {
 body {
   color: #F8F8F8;
   font-family: "Inconsolata", monospace; }
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: Helvetica, Arial; } }
