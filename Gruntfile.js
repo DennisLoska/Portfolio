@@ -79,7 +79,7 @@ module.exports = function (grunt) {
         uglify: {
             target: {
                 files: {
-                    'public/js/app.js': ['src/ES5/utils/animations.js', 'src/ES5/main.js'],
+                    'public/js/app.js': ['src/js/vendor/*.js','src/ES5/utils/animations.js', 'src/ES5/main.js'],
                 },
             },
         },
@@ -123,11 +123,11 @@ module.exports = function (grunt) {
                 files: ['src/css/style.css'],
                 tasks: ['cssmin'],
             },
-            js: { //all LPs share the same footer.js!
+            js: { 
                 files: ['src/js/*.js', 'src/js/**/*.js'],
                 tasks: ['babel'],
             },
-            ES5: { //all LPs share the same footer.js!
+            ES5: { 
                 files: ['src/ES5/*.js', 'src/ES5/**/*.js'],
                 tasks: ['uglify'],
             },
