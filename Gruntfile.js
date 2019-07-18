@@ -77,6 +77,10 @@ module.exports = function (grunt) {
             },
         },
         uglify: {
+            options: {
+                mangle: false,
+                compress: false
+            },
             target: {
                 files: {
                     'public/js/app.js': ['src/js/vendor/*.js','src/ES5/utils/animations.js', 'src/ES5/main.js'],
