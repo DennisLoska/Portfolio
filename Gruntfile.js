@@ -83,7 +83,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'public/js/app.js': ['src/js/vendor/*.js','src/ES5/utils/animations.js', 'src/ES5/main.js'],
+                    'public/js/app.js': ['src/js/vendor/jquery-3.3.1.slim.min.js','src/js/vendor/jquery.min.js','src/js/vendor/popper.min.js','src/js/vendor/bootstrap.min.js','src/js/vendor/jquery.waypoints.min.js','src/js/vendor/jquery.viewportchecker.min.js','src/ES5/utils/animations.js', 'src/ES5/main.js'],
                 },
             },
         },
