@@ -21,9 +21,6 @@
         "grunt-sass": "^2.0.0",
         "nodemailer": "^4.6.7"
     },
-    "engines": {
-        "node": "4.0.0"
-    },
     "repository": {
         "type": "git",
         "url": "https://git.visual-computing.com/Overlays/Overlays"

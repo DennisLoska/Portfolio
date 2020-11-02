@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    container_name: website
+    image: "node:10-buster-slim"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    restart: unless-stopped
+    ports:
+      - "84:5000/tcp"
+    command: "node index.js"

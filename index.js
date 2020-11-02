@@ -7,7 +7,7 @@ let request = require('request');
 let path = require('path');
 let router = express.Router();
 
-app.set('port', process.env.PORT || 5002);
+app.set('port', process.env.PORT || 5000);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
