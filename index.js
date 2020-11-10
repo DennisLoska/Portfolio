@@ -11,7 +11,7 @@ app.set('port', process.env.PORT || 5000);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
-  response.sendFile('index.html');
+  response.sendFile(__dirname + '/public/index.html');
 });
 
 app.get('/privacy', function(req, res) {
