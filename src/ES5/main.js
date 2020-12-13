@@ -164,3 +164,11 @@ $(function () {
 });
 
 /* day-night END */
+
+/* copyright updater START */
+
+$(function () {
+    $('#copyright-year').html(new Date().getFullYear());
+});
+
+/* copyright updater END */
