@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><script>// Set to the same value as the web property used on the site
+        var gaProperty = 'UA-124199510-1';
+
+        // Disable tracking if the opt-out cookie exists.
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
+
+        // Opt-out function
+        function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+            alert('You have successfully opt-out!')
+        }</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-124199510-1"></script><script>window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124199510-1');</script><link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" defer="defer"></script><script>window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#333333"
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "border": "#ffffff",
+                        "text": "#ffffff"
+                    }
+                },
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on my website.",
+                    "dismiss": "ACCEPT",
+                    "href": "https://www.dennisloska.com/privacy"
+                }
+            })
+        });</script><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Everybody loves GDPR, that's why that page exist."><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="css/style.min.css"><script src="js/app.js" defer="defer"></script><script>/* darklight-theme BEGIN */
+
+        $(function () {
+            $('#toggle--daynight').click(function () {
+                let checked = $(this).prop('checked');
+                if (checked) {
+                    $('html').css('background-color', '#ffffff');
+                    $('html').css('color', '#000000');
+                    $('body').css('background-color', '#ffffff');
+                    $('main').css('background-color', '#ffffff');
+                    $('main').css('color', '#000000');
+                    if (window.innerWidth <= 768)
+                        $('#nav-list').css('background-color', '#ffffff');
+                    $('header').css('background-color', '#ffffff');
+                    $('.nav-item>a').css('color', '#000000');
+                    $('#form-btn').css('color', '#000000');
+                    $('#form-btn').css('background-color', '#ffffff');
+
+                    $("#up-btn").hover(function () {
+                        $(this).css("background-color", "#ffffff")
+                    }, function () {
+                        $(this).css("background-color", "#333333");
+                    });
+                } else {
+                    $('html').css('background-color', '#1a1a1a');
+                    $('html').css('color', '#ffffff');
+                    $('body').css('background-color', '#1a1a1a');
+                    $('main').css('background-color', '#1a1a1a');
+                    $('main').css('color', '#ffffff');
+                    if (window.innerWidth <= 768)
+                        $('#nav-list').css('background-color', '#1a1a1a');
+                    $('header').css('background-color', '#1a1a1a');
+                    $('.nav-item>a').css('color', '#ffffff');
+                    $('#form-btn').css('color', '#ffffff');
+                    $('#form-btn').css('background-color', '#1a1a1a');
+
+                    $("#up-btn").hover(function () {
+                        $(this).css("background-color", "#1a1a1a")
+                    }, function () {
+                        $(this).css("background-color", "#33333");
+                    });
+                }
+            })
+        })
+
+        /* darklight-theme END */
+
+        /* hamburger-btn BEGIN */
+
+        function showNavigation() {
+            $('#nav-list').fadeToggle();
+        }
+
+        /* hamburger-btn END */
+
+        /* up-btn BEGIN */
+
+        $(document).ready(function () {
+            $('#up-btn').click(function () {
+                $('html,body').animate({
+                    scrollTop: $('#nav-list').offset().top
+                }, 'slow');
+            })
+        })
+
+        /* up-btn BEGIN */</script><title>Privacy - Dennis Loska</title></head><body><div class="toggle toggle--daynight" id="day-night-btn"><input type="checkbox" id="toggle--daynight" class="toggle--checkbox"> <label class="toggle--btn" for="toggle--daynight"><span class="toggle--feature"></span></label></div><header><nav class="container"><div id="burger-bar" class="row lg-invisible"><div id="burger" class="col-1" onclick="showNavigation()"><span class="burger-stripe">____</span> <span class="burger-stripe">____</span> <span class="burger-stripe">____</span></div></div><ul id="nav-list" class="row justify-content-between align-items-start align-items-md-center"><li class="nav-item underline-from-left col-auto"><a id="js-l1" class="js-link" href="/#skills-row">Skills</a></li><li class="nav-item underline-from-left col-auto"><a id="js-l2" class="js-link" href="/#about-row">About</a></li><li class="nav-item underline-from-left col-auto"><a id="js-l3" class="js-link" href="/#project-row">Projects</a></li><li class="nav-item underline-from-left col-auto"><a id="js-l4" class="js-link" href="/#contact-row">Contact</a></li><li class="nav-item underline-from-left col-auto"><a id="js-l5" class="js-link" href="privacy">Privacy</a></li></ul></nav></header><main><div class="container"><div class="row"><div class="col-12"><h1>Privacy Policy</h1><p>Effective date: August 14, 2018</p><p>Dennis Loska operates the https://www.dennisloska.com website.</p><p>This page informs you of my policies regarding the collection, use, and disclosure of personal data when you use my Site and the choices you have associated with that data. This Privacy Policy for dennisloska.com is powered by <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator.php">FreePrivacyPolicy.com</a>.</p><p>I use your data to provide and improve this website. By using this website, you agree to the collection and use of information in accordance with this policy.</p><h2>Information Collection And Use</h2><p>I collect several different types of information for various purposes to provide and improve this website for you or to get in contact with you.</p><h3>Types of Data Collected</h3><h4>Personal Data</h4><p>While using my website, I may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personally identifiable information may include, but is not limited to:</p><ul><li>Email address</li><li>First name and last name</li><li>Phone number</li><li>Cookies and Usage Data</li><li>IP-adress</li><li>Reference URL</li><li>Browser used</li><li>Date and time of request</li><li>Name of URL and requested data</li></ul><h4>Usage Data</h4><p>I may also collect information how the site is accessed and used ("Usage Data"). This Usage Data may include information such as your computer's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of my website that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p><h4>Tracking & Cookies Data</h4><p>I use cookies and similar tracking technologies to track the activity on my website and hold certain information.</p><p>Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze my website.</p><p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of my website.</p><p>Examples of Cookies I use:</p><ul><li><strong>Session Cookies.</strong> I use Session Cookies to operate my website.</li><li><strong>Preference Cookies.</strong> I use Preference Cookies to remember your preferences and various settings.</li><li><strong>Security Cookies.</strong> I use Security Cookies for security purposes.</li></ul><h5>Google reCAPTCHA</h5><p>I use Google's reCAPTCHA to protect me from spam. The cookie is used for the contact form on my website</p><ul><li>Provider: Google Inc</li><li>Purpose: I use reCAPTCHA for preventing spam requests on my public contact forms.</li><li>Legal basis: To perform communication</li><li>Expiry: Not set</li><li>Type: Session</li></ul><h2>Use of Data</h2><p>dennisloska uses the collected data for various purposes:</p><ul><li>To provide and maintain the website</li><li>To notify you about changes to my website</li><li>To allow you to participate in interactive features of my website when you choose to do so</li><li>To provide customer care and support</li><li>To provide analysis or valuable information so that I can improve the website</li><li>To monitor the usage of the website</li><li>To detect, prevent and address technical issues</li></ul><h2>Transfer Of Data</h2><p>Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p><p>If you are located outside Germany and choose to provide information to me, please note that I transfer the data, including Personal Data, to Germany and process it there.</p><p>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p><p>dennisloska will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p><h2>Disclosure Of Data</h2><h3>Legal Requirements</h3><p>dennisloska may disclose your Personal Data in the good faith belief that such action is necessary to:</p><ul><li>To comply with a legal obligation</li><li>To protect and defend the rights or property of dennisloska</li><li>To prevent or investigate possible wrongdoing in connection with the website</li><li>To protect the personal safety of users of the website or the public</li><li>To protect against legal liability</li></ul><h2>Security Of Data</h2><p>The security of your data is important to me, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While I strive to use acceptable means to protect your Personal Data, I cannot guarantee its absolute security.</p><h2>Service Providers</h2><p>I may employ third party companies and individuals to facilitate my website ("Service Providers"), to provide the website on my behalf, to perform Service-related services or to assist me in analyzing how my website is used.</p><p>These third parties have access to your Personal Data only to perform these tasks on my behalf and are obligated not to disclose or use it for any other purpose.</p><h3>Analytics</h3><p>I may use third-party Service Providers to monitor and analyze the use of my website.</p><ul><li><p><strong>Google Analytics</strong></p><p>Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of my Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.</p><p>You can opt-out of having made your activity on my website available to Google Analytics by installing the Google Analytics opt-out browser add-on. The add-on prevents the Google Analytics JavaScript (ga.js, analytics.js, and dc.js) from sharing information with Google Analytics about visits activity.</p><p>You can also opt-out from Google Analytics from my website by clicking on this link:<br><a href="javascript:gaOptout()">Click here to opt-out of Google Analytics</a></p><p>For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: <a href="https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en</a></p></li></ul><h2>Links To Other Sites</h2><p>my website may contain links to other sites that are not operated by me. If you click on a third party link, you will be directed to that third party's site. I strongly advise you to review the Privacy Policy of every site you visit.</p><p>I have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p><h2>Children's Privacy</h2><p>My website does not address anyone under the age of 18 ("Children").</p><p>I do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided me with Personal Data, please contact me. If I become aware that I have collected Personal Data from children without verification of parental consent, I take steps to remove that information from my servers.</p><h2>Changes To This Privacy Policy</h2><p>I may update my Privacy Policy from time to time. I will notify you of any changes by posting the new Privacy Policy on this page and update the "effective date" at the top of this Privacy Policy.</p><p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p><h2>Contact Me</h2><p>If you have any questions about this Privacy Policy, please contact me:</p><ul><li>By visiting this page on my website: https://www.dennisloska.com/#contact-row</li></ul></div><div class="col-12"><div id="up-btn"><i class="fa fa-chevron-up" aria-hidden="true"></i></div></div></div></div></main><footer><div class="container" id="footer-container"><div id="footer-info-row" class="row text-center text-md-left align-items-center"><div class="col-12"><h2>Dennis Loska</h2><p>I'm a computer science student based in Berlin<br>and aspiring full&shy;stack web developer.</p></div></div><div id="footer-link-row" class="row justify-content-start"><div class="footer-links col-12 col-md-6"><h4>Menu</h4><ul><li class=""><a class="" href="/#skills-row">Skills</a></li><li class=""><a class="" href="/#about-row">About</a></li><li class=""><a class="" href="/#project-row">Projects</a></li><li class=""><a class="" href="/#contact-row">Contact</a></li><li class=""><a class="" href="/privacy">Privacy</a></li></ul></div><div class="footer-links col-12 col-md-6 justify-content-end"><h4>Social</h4><ul><li><a href="https://github.com/DennisLoska" target="_blank">Github</a></li><li><a href="https://www.linkedin.com/in/dennisloska/" target="_blank">Linkedin</a></li><li><a href="https://twitter.com/dennis_loska1" target="_blank" rel="noopener noreferrer">Twitter</a></li><li><a href="https://www.instagram.com/dennis.loska" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://blog.dennisloska.com/" target="_blank" rel="noopener noreferrer">Blog</a></li></ul></div></div><div id="copyright-row" class="row text-center text-md-left align-items-center"><div class="col-12"><span>Copyright © 2019 Dennis Loska. All rights reserved.</span></div></div></div></footer></body></html>
