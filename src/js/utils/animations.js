@@ -60,7 +60,11 @@ $(document).ready(function () {
             classToAdd: 'visible animated bounceInRight',
             offset: 350,
         });
-        $('.card-wrapper').addClass("hidden").viewportChecker({
+        $('.demo-wrapper').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated bounceInLeft',
+            offset: 350,
+        });
+        $('.info-wrapper').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated bounceInRight',
             offset: 350,
         });
