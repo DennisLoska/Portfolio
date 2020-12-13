@@ -113,6 +113,11 @@ function handleChecked() {
     $('html').css('color', '#000000');
     $('body').css('background-color', '#ffffff');
     $('main').css('background-color', '#ffffff');
+    $('.welcome-container-wrapper').css('background-color', '#ffffff');
+    $('.skills-container-wrapper').css('background-color', '#ffffff');
+    $('.about-container-wrapper').css('background-color', '#ffffff');
+    $('.project-container-wrapper').css('background-color', '#ffffff');
+    $('.contact-container-wrapper').css('background-color', '#ffffff');
     $('main').css('color', '#000000');
     $('.fs-blue').css('border-color', '#FF9900');
     if (window.innerWidth <= 768)
@@ -125,6 +130,8 @@ function handleChecked() {
     $('.form-control').css('background-color', 'wheat');
     $('.form-control').css('color', '#000000');
     $('.skill-list>li>span').css('color', '#000000');
+    $('.project-text').css('color', '#000000');
+    $('.project-info').css('background-color', 'lightgoldenrodyellow');
 
     $("#form-btn").hover(function () {
         $(this).css("background-color", "#dee2e6");
@@ -144,6 +151,11 @@ function handleUnchecked() {
     $('body').css('background-color', '#1a1a1a');
     $('main').css('background-color', '#1a1a1a');
     $('main').css('color', '#ffffff');
+    $('.welcome-container-wrapper').css('background-color', '#0e1111');
+    $('.skills-container-wrapper').css('background-color', '#0e1111');
+    $('.about-container-wrapper').css('background-color', '#0e1111');
+    $('.project-container-wrapper').css('background-color', '#232b2b');
+    $('.contact-container-wrapper').css('background-color', '#353839');
     $('.fs-blue').css('border-color', '#2956B2')
     if (window.innerWidth <= 768)
         $('#nav-list').css('background-color', '#1a1a1a');
@@ -155,6 +167,8 @@ function handleUnchecked() {
     $('.form-control').css('background-color', '#333333');
     $('.form-control').css('color', '#ffffff');
     $('.skill-list>li>span').css('color', '#ffffff');
+    $('.project-text').css('color', '#ffffff');
+    $('.project-info').css('background-color', '#333333');
 
     $("#form-btn").hover(function () {
         $(this).css("background-color", "#333333");

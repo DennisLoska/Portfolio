@@ -26,7 +26,7 @@ $size: 70px;
 #up-btn {
     width: $size*2;
     height: $size;
-    background-color: $gray;
+    background-color: $black;
     margin: auto;
     margin-top: 3em;
     border-top-left-radius: $size*2;
@@ -55,7 +55,7 @@ $size: 70px;
 
 #up-btn:hover {
     color: $blue;
-    background-color: $black;
+    background-color: $gray;
     cursor: pointer;
     i {
         -ms-transform: translate(0px, -15px);
