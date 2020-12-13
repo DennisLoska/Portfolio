@@ -3087,7 +3087,8 @@ main {
     -moz-transform: skew(-20deg);
     -o-transform: skew(-20deg); }
   main #project-row .project-wrapper {
-    min-height: 310px; }
+    min-height: 310px;
+    margin-bottom: 50px; }
     main #project-row .project-wrapper .project-info {
       border: 3px solid orange;
       background-color: #333333;
