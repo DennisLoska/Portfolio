@@ -2971,10 +2971,14 @@ main {
     height: 85vh; }
     main #welcome-row #welcome-profile .profile-img {
       border: 3px solid orange;
+      -o-object-fit: cover;
       object-fit: cover;
       width: 70%;
       height: auto;
       border-radius: 5%; }
+      @media only screen and (max-width: 480px) {
+        main #welcome-row #welcome-profile .profile-img {
+          max-height: 250px; } }
     main #welcome-row #welcome-headline h1 {
       font-size: 4em; }
   main #skills-row #skill-headline h2 {

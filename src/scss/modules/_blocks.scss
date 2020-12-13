@@ -6,10 +6,15 @@ main {
         #welcome-profile {
             .profile-img {
                 border: 3px solid orange;
+                -o-object-fit: cover;
                 object-fit: cover;
                 width: 70%;
                 height: auto;
                 border-radius: 5%;
+
+                @media only screen and (max-width: 480px) {
+                    max-height: 250px;
+                }
             }
         }
         #welcome-headline h1 {
@@ -194,6 +199,7 @@ main {
         p {
             font-size: 1.2em;
             text-align: center;
+
         }
         #contact-form {
             margin: 50px 0 100px 0;
