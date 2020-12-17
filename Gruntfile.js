@@ -7,6 +7,7 @@ module.exports = function (grunt) {
     */
     require('load-grunt-tasks')(grunt);
     const mozjpeg = require('imagemin-mozjpeg');
+    const pngquant = require('imagemin-pngquant');
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.initConfig({
@@ -57,7 +58,7 @@ module.exports = function (grunt) {
             },
         },
         copy: {
-            Game: {
+            Images: {
                 expand: true,
                 cwd: 'src/',
                 src: 'img/**',
@@ -88,33 +89,24 @@ module.exports = function (grunt) {
             },
         },
         imagemin: {
-            static: {
-                options: {
-                    optimizationLevel: 3,
-                    svgoPlugins: [{
-                        removeViewBox: false
-                    }],
-                    progressive: true,
-                    use: [mozjpeg()] // Example plugin usage
-                },
-                files: {
-                    
-                }
-            },
             dynamic: {
-                options: {
-                    optimizationLevel: 3,
-                    svgoPlugins: [{
-                        removeViewBox: false
-                    }],
-                    progressive: true,
-                    use: [mozjpeg()] // Example plugin usage
+                options: { 
+                    full:true,
+                    optimizationLevel: 5,
+                    svgoPlugins: [
+                        { removeViewBox: false },
+                        { cleanupIDs: false }
+                    ],
+                    use: [
+                        pngquant({quality: [0.5, 0.5]}),
+                        mozjpeg({quality: 50})
+                    ]
                 },
                 files: [{
                     expand: true,
-                    cwd: 'src/img',
+                    cwd: 'src/img/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'public/img'
+                    dest: 'public/img/'  
                 }]
             }
         },
@@ -145,6 +137,7 @@ module.exports = function (grunt) {
             },
         },
     });
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.registerTask('default', ['babel', 'sass', 'htmlmin', 'cssmin', 'uglify', 'copy', 'watch']);
     grunt.registerTask('build', ['babel', 'sass', 'htmlmin', 'cssmin', 'uglify', 'copy', 'imagemin']);
 };

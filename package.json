@@ -1,5 +1,5 @@
 {
-    "name": "Overlays",
+    "name": "Portfolio",
     "version": "0.1.0",
     "description": "",
     "main": "index.js",
@@ -19,26 +19,21 @@
         "grunt-contrib-nodeunit": "~0.4.1",
         "grunt-contrib-uglify": "~3.3.0",
         "grunt-sass": "^2.0.0",
+        "imagemin-pngquant": "^9.0.1",
         "nodemailer": "^4.6.7"
     },
     "repository": {
-        "type": "git",
-        "url": "https://git.visual-computing.com/Overlays/Overlays"
+        "type": "git"
     },
-    "keywords": [
-        "Overlays",
-        "Image game",
-        "Visual Computing",
-        "Puzzle Game"
-    ],
+    "keywords": [],
     "author": "Dennis Loska",
     "contributors": [
-        "Dennis Loska <d.loska@hotmail.de> (http://dennisloska.com)"
+        "Dennis Loska <d.loska@hotmail.de> (https://dennisloska.com)"
     ],
     "license": "MIT",
     "devDependencies": {
         "grunt": "^0.4.5",
-        "grunt-contrib-imagemin": "^2.0.1",
+        "grunt-contrib-imagemin": "^4.0.0",
         "grunt-contrib-watch": "^1.1.0",
         "imagemin-mozjpeg": "^7.0.0",
         "load-grunt-tasks": "^3.5.2"
