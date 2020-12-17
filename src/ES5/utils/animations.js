@@ -1,40 +1,7 @@
 'use strict';
 
-/* skillbar-animation BEGIN */
-//http://imakewebthings.com/waypoints/guides/jquery-zepto/
-function loadSkills() {
-    var once = false;
-    var waypoints_skills = $('#skills').waypoint({
-        handler: function handler() {
-            var skillset = [95, 90, 65, 60, 80, 50, 40, 20];
-
-            function loadBars(time) {
-                var timeOut = void 0;
-                $('.skill-percent').each(function (i) {
-                    $(this).text(skillset[i] + '%');
-                    if (time <= skillset[i]) $(this).css('width', time + '%');else clearTimeout(timeOut);
-                });
-                timeOut = setTimeout(function () {
-                    loadBars(time + 4);
-                }, 20);
-            }
-            if (!once) {
-                loadBars(0);
-                once = true;
-            }
-        },
-        offset: 350
-    });
-}
-/* skillbar-animation END */
-
 /* fade-in animations based on animate.css BEGIN */
 $(document).ready(function () {
-    $('#skills').addClass("hidden").viewportChecker({
-        classToAdd: 'visible animated bounceInUp',
-        offset: 350,
-        callbackFunction: loadSkills()
-    });
     if (window.innerWidth > 1024) {
         $('.component-l').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated bounceInRight',
@@ -47,14 +14,6 @@ $(document).ready(function () {
         $('#form-wrapper').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated bounceInUp',
             offset: 350
-        });
-        $('.fs-blue').addClass("hidden").viewportChecker({
-            classToAdd: 'circle-visible animated bounceInUp',
-            offset: 150
-        });
-        $('.fs-orange').addClass("hidden").viewportChecker({
-            classToAdd: 'circle-visible animated bounceInDown',
-            offset: 150
         });
         $('#project-info').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated bounceInRight',
