@@ -98,7 +98,7 @@ module.exports = function (grunt) {
                         { cleanupIDs: false }
                     ],
                     use: [
-                        pngquant({quality: [0.5, 0.5]}),
+                        pngquant({quality: [0.7, 0.7]}),
                         mozjpeg({quality: 50})
                     ]
                 },
