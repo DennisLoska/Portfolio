@@ -32,7 +32,7 @@
     ],
     "license": "MIT",
     "devDependencies": {
-        "grunt": "^0.4.5",
+        "grunt": "^1.5.2",
         "grunt-contrib-imagemin": "^4.0.0",
         "grunt-contrib-watch": "^1.1.0",
         "imagemin-mozjpeg": "^7.0.0",
