@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js"
+        "start": "node index.js",
+	"build": "grunt build --force"
     },
     "dependencies": {
         "babel-preset-env": "^1.5.2",
